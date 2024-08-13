@@ -1,0 +1,7 @@
+<h1>Welcome, {{ user_name.value }}!</h1>
+<input [formControl]="user_name" placeholder="name" type="text" />
+<input [formControl]="user_email" placeholder="email" type="text" />
+<input [formControl]="user_bio" placeholder="bio" type="text" />
+<button (click)="handleReset()" [disabled]="isResetDisabled()">Reset</button>
+<button (click)="handleSave()">Save</button>
+<p>{{ counter }}</p>
